@@ -1,9 +1,11 @@
 package it.atom.msscbrewery.service.V2;
 
 import it.atom.msscbrewery.web.model.V2.BeerDtoV2;
+import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+@Service
 public class BeerServiceV2Impl implements BeerServiceV2 {
     @Override
     public BeerDtoV2 getBeerById(UUID beerId) {
