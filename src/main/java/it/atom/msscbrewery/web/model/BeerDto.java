@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.Null;
+import javax.validation.constraints.Positive;
 import java.util.UUID;
 
 @Data
@@ -19,7 +20,9 @@ public class BeerDto {
 
     @NotNull
     private String beerName;
+    @NotNull
     private  String beerStyle;
+    @Positive
     private Long upc;
 
 }
